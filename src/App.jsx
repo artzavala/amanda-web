@@ -8,7 +8,6 @@ import DiamondSelf      from './components/DiamondSelf';
 import DiamondCoherence from './components/DiamondCoherence';
 import IndustryCarousel from './components/IndustryCarousel';
 import Services         from './components/Services';
-import Philosophy       from './components/Philosophy';
 import About            from './components/About';
 import LilyGrace        from './components/LilyGrace';
 import CTA              from './components/CTA';
@@ -28,7 +27,6 @@ export default function App() {
         <DiamondCoherence />
         <IndustryCarousel />
         <Services />
-        <Philosophy />
         <About />
         <LilyGrace />
         <CTA />

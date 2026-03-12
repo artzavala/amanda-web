@@ -50,13 +50,7 @@ export default function DiamondSelf() {
                 style={{ background: GOLD, color: 'white' }}
                 onMouseEnter={e => e.currentTarget.style.background = GOLD_DARK}
                 onMouseLeave={e => e.currentTarget.style.background = GOLD}>
-                Explore This Module
-              </button>
-              <button className="text-[0.65rem] font-semibold tracking-[0.2em] uppercase px-6 py-3 border transition-all duration-300"
-                style={{ borderColor: GOLD, color: GOLD }}
-                onMouseEnter={e => { e.currentTarget.style.background = GOLD; e.currentTarget.style.color = 'white'; }}
-                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = GOLD; }}>
-                Learn More
+                Book A Call
               </button>
             </div>
           </Reveal>

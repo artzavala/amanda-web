@@ -117,7 +117,7 @@ function DiamondPresenceSVG() {
 
 export default function NorthStar() {
   return (
-    <section className="py-28 relative overflow-hidden" style={{ background: SLATE }}>
+    <section id="north-star" className="py-28 relative overflow-hidden" style={{ background: SLATE }}>
       <div className="absolute inset-0 opacity-[0.04]" style={{
         backgroundImage: `linear-gradient(${GOLD} 1px, transparent 1px), linear-gradient(90deg, ${GOLD} 1px, transparent 1px)`,
         backgroundSize: '72px 72px',

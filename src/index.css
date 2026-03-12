@@ -250,10 +250,11 @@ body.cursor-hover #cursor-ring {
   position: absolute;
   inset: 0;
   background: var(--gold);
-  transform: translateX(-101%);
+  transform: scaleX(0);
+  transform-origin: left;
   transition: transform 0.3s var(--ease-out);
 }
-.nav-cta-btn:hover::before { transform: translateX(0); }
+.nav-cta-btn:hover::before { transform: scaleX(1); }
 .nav-cta-btn:hover { color: var(--white) !important; }
 .nav-cta-btn span { position: relative; z-index: 1; }
 

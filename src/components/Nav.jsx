@@ -16,7 +16,7 @@ export default function Nav() {
     <>
       <nav id="nav" className={scrolled ? 'scrolled' : ''} aria-label="Main navigation">
         <div className="container">
-          <a href="#" className="nav-logo">
+          <a href="/" className="nav-logo">
             <svg className="nav-logo-mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <polygon points="12,1 23,12 12,23 1,12" fill="none" stroke="currentColor" strokeWidth="1.2"/>
               <polygon points="12,6 18,12 12,18 6,12" fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.5"/>
@@ -26,10 +26,10 @@ export default function Nav() {
           </a>
 
           <ul className="nav-links" role="list">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#about">About</a></li>
             <li>
-              <a href="#cta" className="nav-cta-btn">
+              <a href="/#cta" className="nav-cta-btn">
                 <span>Contact</span>
               </a>
             </li>
@@ -53,9 +53,9 @@ export default function Nav() {
         role="navigation"
         aria-label="Mobile navigation"
       >
-        <a href="#services" onClick={closeMenu}>Services</a>
-        <a href="#about" onClick={closeMenu}>About</a>
-        <a href="#cta" onClick={closeMenu}>Contact</a>
+        <a href="/#services" onClick={closeMenu}>Services</a>
+        <a href="/#about" onClick={closeMenu}>About</a>
+        <a href="/#cta" onClick={closeMenu}>Contact</a>
       </div>
     </>
   );

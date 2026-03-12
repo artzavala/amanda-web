@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
   return (
     <footer id="footer">
@@ -12,9 +14,11 @@ export default function Footer() {
             New Human Potential
           </span>
           <nav className="footer-links" aria-label="Footer navigation">
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#cta">Contact</a>
+            <a href="/#services">Services</a>
+            <a href="/#about">About</a>
+            <a href="/#cta">Contact</a>
+            <Link to="/privacy">Privacy Policy</Link>
+            <Link to="/terms">Terms</Link>
           </nav>
           <span className="footer-copy">© 2026 New Human Potential. All rights reserved.</span>
         </div>

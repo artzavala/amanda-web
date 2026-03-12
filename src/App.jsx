@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom';
 import CustomCursor     from './components/CustomCursor';
 import AnnouncementBar  from './components/AnnouncementBar';
 import Nav              from './components/Nav';
@@ -12,8 +13,10 @@ import About            from './components/About';
 import LilyGrace        from './components/LilyGrace';
 import CTA              from './components/CTA';
 import Footer           from './components/Footer';
+import PrivacyPage      from './pages/PrivacyPage';
+import TermsPage        from './pages/TermsPage';
 
-export default function App() {
+function MainLayout() {
   return (
     <>
       <CustomCursor />
@@ -33,5 +36,15 @@ export default function App() {
       </main>
       <Footer />
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<MainLayout />} />
+      <Route path="/privacy" element={<PrivacyPage />} />
+      <Route path="/terms" element={<TermsPage />} />
+    </Routes>
   );
 }

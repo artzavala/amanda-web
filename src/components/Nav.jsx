@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { pathname } = useLocation();
+  const isSubPage = pathname !== '/';
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 50);
@@ -14,7 +17,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav id="nav" className={scrolled ? 'scrolled' : ''} aria-label="Main navigation">
+      <nav id="nav" className={scrolled || isSubPage ? 'scrolled' : ''} aria-label="Main navigation">
         <div className="container">
           <a href="/" className="nav-logo">
             <svg className="nav-logo-mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">

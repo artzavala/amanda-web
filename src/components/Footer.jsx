@@ -13,7 +13,6 @@ export default function Footer() {
           </span>
           <nav className="footer-links" aria-label="Footer navigation">
             <a href="#services">Services</a>
-            <a href="#philosophy">Philosophy</a>
             <a href="#about">About</a>
             <a href="#cta">Contact</a>
           </nav>

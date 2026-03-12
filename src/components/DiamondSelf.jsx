@@ -9,10 +9,10 @@ const vSlideLeft  = { hidden: { opacity: 0, x: 40  }, visible: { opacity: 1, x: 
 
 const STEPS = [
   { num: '01', title: 'Awareness',           desc: 'The foundation. Seeing yourself and your environment without the distortion of ego, fear, or assumption.' },
-  { num: '02', title: 'Emotional Regulation',desc: 'The ability to feel fully without being ruled by feeling. Mastery of state — not suppression of it.' },
+  { num: '02', title: 'Emotional Regulation',desc: 'The ability to feel fully without being ruled by feeling. Mastery of state not suppression of it.' },
   { num: '03', title: 'Coherence',           desc: 'When your heart, mind, and nervous system move in the same direction. The body as ally, not obstacle.' },
   { num: '04', title: 'Integration',         desc: 'Weaving insight into habit. Transforming episodic excellence into a repeatable, trainable baseline.' },
-  { num: '05', title: 'Embodiment',          desc: 'Identity-level change. You are no longer performing at your best — you have become your best.' },
+  { num: '05', title: 'Embodiment',          desc: 'Identity-level change. You are no longer performing at your best you have become your best.' },
 ];
 
 export default function DiamondSelf() {
@@ -37,7 +37,7 @@ export default function DiamondSelf() {
               unshakeable internal operating system of your own."
             </p>
             <p className="text-sm leading-[1.85] mb-6" style={{ color: '#5a5a5a' }}>
-              Diamond Self™ is the foundational module — a deep exploration of your internal landscape.
+              Diamond Self™ is the foundational module a deep exploration of your internal landscape.
               Through somatic intelligence, neuroscience-backed tools, and reflective practice, you build
               the internal infrastructure that all outer performance depends on.
             </p>

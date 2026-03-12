@@ -28,7 +28,7 @@ function DiamondPresenceSVG() {
   return (
     <div ref={ref} className="w-full max-w-2xl mx-auto px-4">
       <svg viewBox="-55 0 910 610" className="w-full h-auto"
-        aria-label="Diamond Presence Framework: four pillars — Clarity, Coherence, Pressure, Facets">
+        aria-label="Diamond Presence Framework: four pillars Clarity, Coherence, Pressure, Facets">
         <defs>
           <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
             <path d="M0 0L10 5L0 10z" fill={GOLD} opacity="0.9" />
@@ -136,7 +136,7 @@ export default function NorthStar() {
             <p className="text-base leading-relaxed max-w-xl mx-auto"
               style={{ color: 'rgba(255,255,255,0.5)', fontFamily: "'DM Sans', system-ui, sans-serif" }}>
               Four interconnected pillars that form the architecture of sustained high performance.
-              Each dimension reinforces the others — creating a self-amplifying system of excellence.
+              Each dimension reinforces the others creating a self-amplifying system of excellence.
             </p>
           </Reveal>
         </div>
@@ -150,7 +150,7 @@ export default function NorthStar() {
             {[
               { label: 'Clarity',   desc: 'Precise, honest communication that cuts through complexity.' },
               { label: 'Coherence', desc: 'Internal alignment between thought, emotion, and action.' },
-              { label: 'Pressure',  desc: 'Converting stress into signal — not noise.' },
+              { label: 'Pressure',  desc: 'Converting stress into signal not noise.' },
               { label: 'Facets',    desc: 'The ongoing sharpening of skills into mastery.' },
             ].map((p) => (
               <motion.div key={p.label} variants={vFadeUp}

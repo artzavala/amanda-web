@@ -27,7 +27,6 @@ export default function Nav() {
 
           <ul className="nav-links" role="list">
             <li><a href="#services">Services</a></li>
-            <li><a href="#philosophy">Philosophy</a></li>
             <li><a href="#about">About</a></li>
             <li>
               <a href="#cta" className="nav-cta-btn">
@@ -55,7 +54,6 @@ export default function Nav() {
         aria-label="Mobile navigation"
       >
         <a href="#services" onClick={closeMenu}>Services</a>
-        <a href="#philosophy" onClick={closeMenu}>Philosophy</a>
         <a href="#about" onClick={closeMenu}>About</a>
         <a href="#cta" onClick={closeMenu}>Contact</a>
       </div>

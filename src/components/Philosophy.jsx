@@ -17,7 +17,7 @@ const PILLARS = [
     letter: 'C',
     index: '03 / 04',
     name: 'Capacity',
-    desc: 'The ability to remain stable under pressure. Building range — not just resilience.',
+    desc: 'The ability to remain stable under pressure. Building range not just resilience.',
   },
   {
     letter: 'C',

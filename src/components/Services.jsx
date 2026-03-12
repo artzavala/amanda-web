@@ -31,7 +31,7 @@ export default function Services() {
           </div>
           <Reveal delay={0.2} className="services-header-right">
             <p className="services-header-desc">
-              Three distinct engagement models — each designed to create measurable shifts in coherence, capacity, and performance.
+              Three distinct engagement models each designed to create measurable shifts in coherence, capacity, and performance.
             </p>
           </Reveal>
         </div>

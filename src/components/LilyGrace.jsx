@@ -16,7 +16,7 @@ const RECIPIENTS = [
   },
   {
     label: 'Schools & Youth',
-    desc:  'Emotional regulation curricula deployed in under-resourced schools — equipping the next generation with a nervous system toolkit.',
+    desc:  'Emotional regulation curricula deployed in under-resourced schools equipping the next generation with a nervous system toolkit.',
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-9 h-9" aria-hidden="true">
         <rect x="6" y="12" width="28" height="22" rx="1" stroke="currentColor" strokeWidth="1.2" />
@@ -73,14 +73,14 @@ export default function LilyGrace() {
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", color: '#5a4a30', fontWeight: 300, fontStyle: 'italic' }}>
             "Every corporate engagement with New Human Potential directly funds
             an equal deployment of Diamond Presence training to those who serve our communities
-            — and rarely have access to tools like these."
+            and rarely have access to tools like these."
           </p>
         </Reveal>
 
         <Reveal delay={0.25}>
           <p className="text-sm leading-relaxed max-w-xl mx-auto mb-14" style={{ color: '#8a7050' }}>
             This is the Pay It Forward model. You invest in your own performance and your team's
-            coherence — and in doing so, you fund a mirrored humanitarian deployment of the same
+            coherence and in doing so, you fund a mirrored humanitarian deployment of the same
             tools to first responders, students, and healthcare workers in need.
           </p>
         </Reveal>

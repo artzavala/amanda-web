@@ -24,7 +24,7 @@ export default function CTA() {
 
       <div className="container">
         <div className="cta-inner">
-          <Reveal tag="p" className="cta-eyebrow">Limited Spots — 3.30.26</Reveal>
+          <Reveal tag="p" className="cta-eyebrow">Limited Spots 3.30.26</Reveal>
           <Reveal delay={0.1} tag="h2" className="cta-heading">
             Receive Your Free<br />Stress Screening
           </Reveal>
@@ -33,13 +33,13 @@ export default function CTA() {
             include a complimentary stress screening.
           </Reveal>
           <Reveal delay={0.2}>
-            <div className="cta-value">A $350 Value — Complimentary With Registration</div>
+            <div className="cta-value">A $350 Value Complimentary With Registration</div>
           </Reveal>
 
           <Reveal delay={0.25}>
             {submitted ? (
               <p className="form-success">
-                Thank you — we'll be in touch with your next steps.
+                Thank you we'll be in touch with your next steps.
               </p>
             ) : (
               <form className="email-form" onSubmit={handleSubmit}>

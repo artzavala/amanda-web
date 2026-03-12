@@ -24,12 +24,12 @@ export default function About() {
 
             <Reveal delay={0.2} tag="p" className="about-bio">
               Amanda Shannon is a sales performance coach, human potential specialist,
-              and founder of the Diamond Presence™ methodology — a proprietary framework
+              and founder of the Diamond Presence™ methodology a proprietary framework
               integrating neuroscience, somatic intelligence, and elite performance coaching.
             </Reveal>
             <Reveal delay={0.25} tag="p" className="about-bio">
               She works with CEOs, founders, and organizational leaders to build the internal
-              architecture that makes brilliance under pressure not an exception — but a baseline.
+              architecture that makes brilliance under pressure not an exception but a baseline.
             </Reveal>
 
             <Reveal delay={0.3} className="about-credentials">
@@ -44,7 +44,7 @@ export default function About() {
 
           <Reveal delay={0.2} className="about-photo-wrap">
             <div className="about-photo-frame">
-              <img src="/amanda.webp" alt="Amanda Shannon — Founder, New Human Potential" />
+              <img src="/amanda.webp" alt="Amanda Shannon Founder, New Human Potential" />
             </div>
           </Reveal>
         </div>

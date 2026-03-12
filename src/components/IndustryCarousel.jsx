@@ -11,7 +11,7 @@ const SLIDES = [
       headline: 'The Burnout Cycle',
       points: [
         'Top producers carry every client\'s anxiety as their own.',
-        'Emotional reactivity in negotiation costs deals — often silently.',
+        'Emotional reactivity in negotiation costs deals often silently.',
         'Commission volatility creates chronic nervous system dysregulation.',
         'Agent turnover averages 87% within the first 5 years.',
       ],
@@ -21,7 +21,7 @@ const SLIDES = [
       points: [
         'Agents in Diamond Presence training close 23% more in 90 days.',
         'Coherent negotiators read rooms better and hold frames longer.',
-        'Regulated state signals trustworthiness — clients feel it.',
+        'Regulated state signals trustworthiness clients feel it.',
         'Retention increases when performance is sustainable, not explosive.',
       ],
     },
@@ -33,7 +33,7 @@ const SLIDES = [
       points: [
         'One dysregulated leader destabilizes an entire team\'s nervous system.',
         'Decision fatigue peaks exactly when high-stakes choices are required.',
-        'Pressure environments reward reactivity — and punish it simultaneously.',
+        'Pressure environments reward reactivity and punish it simultaneously.',
         'Culture problems are often coherence problems in disguise.',
       ],
     },
@@ -52,10 +52,10 @@ const SLIDES = [
     problem: {
       headline: 'Every Profession Has a Pressure Problem',
       points: [
-        'Healthcare, law, finance, education — pressure is universal.',
+        'Healthcare, law, finance, education pressure is universal.',
         'The tools most industries use for "resilience" address symptoms, not systems.',
         'Burnout is not a personal failure. It is a systemic design flaw.',
-        'The question isn\'t whether your field has this problem — it\'s when.',
+        'The question isn\'t whether your field has this problem it\'s when.',
       ],
     },
     solution: {

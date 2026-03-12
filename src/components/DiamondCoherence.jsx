@@ -70,15 +70,15 @@ export default function DiamondCoherence() {
                   Coherence Carriers™
                 </h3>
                 <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.5)' }}>
-                  Coherence is not a metaphor. It's a measurable physiological state — documented
+                  Coherence is not a metaphor. It's a measurable physiological state documented
                   by the HeartMath Institute and replicated across 30 years of research.
                 </p>
               </div>
               <div className="space-y-5 flex-1">
                 {[
                   { icon: '◈', title: 'Cardiac Coherence', body: 'When heart rhythm patterns become smooth and ordered, the brain receives signals that unlock access to higher cognitive function, creativity, and emotional intelligence.' },
-                  { icon: '◈', title: 'Nervous System Entrainment', body: 'The coherence state can be intentionally trained, transferred, and stabilized — making it a learnable performance asset rather than a lucky state.' },
-                  { icon: '◈', title: 'Psychophysiological Synchrony', body: 'In coherent groups, individual nervous systems begin to entrain to one another — amplifying team intelligence and reducing reactive conflict.' },
+                  { icon: '◈', title: 'Nervous System Entrainment', body: 'The coherence state can be intentionally trained, transferred, and stabilized making it a learnable performance asset rather than a lucky state.' },
+                  { icon: '◈', title: 'Psychophysiological Synchrony', body: 'In coherent groups, individual nervous systems begin to entrain to one another amplifying team intelligence and reducing reactive conflict.' },
                 ].map(item => (
                   <div key={item.title} className="flex gap-4">
                     <span className="text-xl mt-0.5 flex-shrink-0" style={{ color: GOLD }}>{item.icon}</span>

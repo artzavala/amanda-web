@@ -2,16 +2,6 @@ import CustomCursor from '../components/CustomCursor';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
-const sections = [
-  { id: 'agreement',   label: 'Agreement to Terms' },
-  { id: 'use',         label: 'Use of Services' },
-  { id: 'ip',          label: 'Intellectual Property' },
-  { id: 'disclaimer',  label: 'Disclaimer of Warranties' },
-  { id: 'liability',   label: 'Limitation of Liability' },
-  { id: 'changes',     label: 'Changes to Terms' },
-  { id: 'contact',     label: 'Contact' },
-];
-
 export default function TermsPage() {
   return (
     <>
@@ -38,18 +28,6 @@ export default function TermsPage() {
 
         {/* Body */}
         <div className="legal-layout container">
-
-          {/* Sticky TOC */}
-          <aside className="legal-toc" aria-label="Table of contents">
-            <p className="legal-toc-heading">Contents</p>
-            <ol>
-              {sections.map(s => (
-                <li key={s.id}>
-                  <a href={`#${s.id}`}>{s.label}</a>
-                </li>
-              ))}
-            </ol>
-          </aside>
 
           {/* Content */}
           <div>

@@ -2,16 +2,6 @@ import CustomCursor from '../components/CustomCursor';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
-const sections = [
-  { id: 'introduction',  label: 'Introduction' },
-  { id: 'collection',    label: 'Information We Collect' },
-  { id: 'usage',         label: 'How We Use It' },
-  { id: 'cookies',       label: 'Cookies' },
-  { id: 'third-parties', label: 'Third Parties' },
-  { id: 'your-rights',   label: 'Your Rights' },
-  { id: 'contact',       label: 'Contact' },
-];
-
 export default function PrivacyPage() {
   return (
     <>
@@ -38,18 +28,6 @@ export default function PrivacyPage() {
 
         {/* Body */}
         <div className="legal-layout container">
-
-          {/* Sticky TOC */}
-          <aside className="legal-toc" aria-label="Table of contents">
-            <p className="legal-toc-heading">Contents</p>
-            <ol>
-              {sections.map(s => (
-                <li key={s.id}>
-                  <a href={`#${s.id}`}>{s.label}</a>
-                </li>
-              ))}
-            </ol>
-          </aside>
 
           {/* Content */}
           <div>

@@ -1071,12 +1071,8 @@ body.cursor-hover #cursor-ring {
   color: var(--mid-gray);
 }
 .legal-layout {
-  display: grid;
-  grid-template-columns: 210px 1fr;
-  gap: 6rem;
   padding-top: 5rem;
   padding-bottom: 7rem;
-  align-items: start;
 }
 .legal-toc {
   position: sticky;

@@ -89,15 +89,7 @@ export default function DiamondCoherence() {
                   </div>
                 ))}
               </div>
-              <div className="mt-8 pt-6 border-t border-white/10">
-                <span className="inline-flex items-center gap-2 text-[0.65rem] font-semibold tracking-[0.18em] uppercase transition-colors duration-200 group-hover:opacity-100 opacity-70"
-                  style={{ color: GOLD }}>
-                  Explore the Research
-                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
-                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </span>
-              </div>
+
             </div>
           </BentoCard>
 

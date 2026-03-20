@@ -147,7 +147,7 @@ export default function LilyGrace() {
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </a>
-          <a href="#" className="text-[0.65rem] font-semibold tracking-[0.2em] uppercase px-8 py-3.5 border transition-all duration-300"
+          <a href="https://lilygracefoundation.com/" target="_blank" rel="noopener noreferrer" className="text-[0.65rem] font-semibold tracking-[0.2em] uppercase px-8 py-3.5 border transition-all duration-300"
             style={{ borderColor: 'rgba(168,136,58,0.4)', color: GOLD_DARK }}
             onMouseEnter={e => { e.currentTarget.style.background = GOLD_DARK; e.currentTarget.style.color = 'white'; e.currentTarget.style.borderColor = GOLD_DARK; }}
             onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = GOLD_DARK; e.currentTarget.style.borderColor = 'rgba(168,136,58,0.4)'; }}>

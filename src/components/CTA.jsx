@@ -1,13 +1,43 @@
 import { useState } from 'react';
 import Reveal from './shared/Reveal';
 
+const MAILCHIMP_URL =
+  'https://gmail.us22.list-manage.com/subscribe/post-json?u=2ca104a85b835c3729759132f&id=05ee0fa58b&f_id=00abc2e1f0';
+
 export default function CTA() {
   const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState('idle'); // idle | loading | success | error
+  const [message, setMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email) setSubmitted(true);
+    if (!email) return;
+
+    setStatus('loading');
+
+    const callbackName = `mc_callback_${Date.now()}`;
+    const url = `${MAILCHIMP_URL}&EMAIL=${encodeURIComponent(email)}&c=${callbackName}`;
+
+    window[callbackName] = (data) => {
+      if (data.result === 'success') {
+        setStatus('success');
+      } else {
+        setStatus('error');
+        setMessage(data.msg?.replace(/<[^>]+>/g, '') ?? 'Something went wrong. Please try again.');
+      }
+      delete window[callbackName];
+      document.body.removeChild(script);
+    };
+
+    const script = document.createElement('script');
+    script.src = url;
+    script.onerror = () => {
+      setStatus('error');
+      setMessage('Something went wrong. Please try again.');
+      delete window[callbackName];
+      document.body.removeChild(script);
+    };
+    document.body.appendChild(script);
   };
 
   return (
@@ -37,9 +67,9 @@ export default function CTA() {
           </Reveal>
 
           <Reveal delay={0.25}>
-            {submitted ? (
+            {status === 'success' ? (
               <p className="form-success">
-                Thank you we'll be in touch with your next steps.
+                Thank you — we'll be in touch with your next steps.
               </p>
             ) : (
               <form className="email-form" onSubmit={handleSubmit}>
@@ -53,12 +83,21 @@ export default function CTA() {
                   autoComplete="email"
                   aria-label="Email address"
                 />
-                <button className="email-btn" type="submit">Claim Your Spot</button>
+                {/* Mailchimp honeypot — must stay hidden */}
+                <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+                  <input type="text" name="b_2ca104a85b835c3729759132f_05ee0fa58b" tabIndex="-1" defaultValue="" />
+                </div>
+                <button className="email-btn" type="submit" disabled={status === 'loading'}>
+                  {status === 'loading' ? 'Submitting…' : 'Claim Your Spot'}
+                </button>
               </form>
+            )}
+            {status === 'error' && (
+              <p className="form-note" style={{ color: '#c0392b', marginTop: '0.75rem' }}>{message}</p>
             )}
           </Reveal>
 
-          {!submitted && (
+          {status === 'idle' && (
             <Reveal delay={0.3} tag="p" className="form-note">
               No spam. Unsubscribe at any time.
             </Reveal>

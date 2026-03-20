@@ -46,12 +46,15 @@ export default function DiamondSelf() {
               of transformation every high-performing leader must traverse.
             </p>
             <div className="mt-10 flex gap-3">
-              <button className="text-[0.65rem] font-semibold tracking-[0.2em] uppercase px-6 py-3 transition-all duration-300"
+              <a href="https://calendar.app.google/L1Rr2CCwRjNXgsDW6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[0.65rem] font-semibold tracking-[0.2em] uppercase px-6 py-3 transition-all duration-300"
                 style={{ background: GOLD, color: 'white' }}
                 onMouseEnter={e => e.currentTarget.style.background = GOLD_DARK}
                 onMouseLeave={e => e.currentTarget.style.background = GOLD}>
                 Book A Call
-              </button>
+              </a>
             </div>
           </Reveal>
 
